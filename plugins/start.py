@@ -6,11 +6,11 @@ from database.userchats import add_chat
 from vars import var
 
 START_MSG = """
-Hi, I am **Anonymous Sender RoBot.**\n
+Hi, I am **Anonymous Macaw Bot.**\n
 Just Forward/Send me Some messages or
 media and I will **Anonymize** that !!
 You Can also Clone me **(Only Forks Allowed, No Kangs, If Kangs found, be ready for FBan.)** :-
-https://github.com/madboy482/AnonymousSender
+https://github.com/Necan03/AnonymousMacawBot
 """
 
 if var.START_MESSAGE is not None:
@@ -22,7 +22,7 @@ else:
 REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [InlineKeyboardButton("Captions ❓", callback_data="captz")],
-        [InlineKeyboardButton("Owner 🤴", url="https://t.me/Warning_MadBoy_is_Back")],
+        [InlineKeyboardButton("Owner 🤴", url="https://t.me/Necan03")],
     ]
 )
 
@@ -36,7 +36,7 @@ async def start(client, message):
     NewVar = START
     if var.OWNER_ID and not message.from_user.id == var.OWNER_ID:
         geto = await client.get_users(var.OWNER_ID)
-        NewVar += f"\n\nMaintained By @Warning_MadBoy_is_Back"
+        NewVar += f"\n\nMaintained By @Necan03"
     else:
         NewVar += "\n**Owner Commands** - https://telegra.ph/Commands-for-Owner-07-03"
     await message.reply_text(
