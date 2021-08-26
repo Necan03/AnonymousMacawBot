@@ -1,9 +1,9 @@
 {
-    "name": "Anonymous Sender RoBot",
+    "name": "Anonymous Macaw Bot",
     "description": "A bot to hide the Sender of Messages.",
-    "repository": "https://github.com/madboy482/AnonymousSender",
+    "repository": "https://github.com/Necan03/AnonymousMacawBot",
     "logo": "https://telegra.ph/file/dbde40cf2574cdc3254dd.png",
-    "keywords": ["telegram", "Anonymous Sender RoBot", "Hide sender", "telegram bot"],
+    "keywords": ["telegram", "Anonymous Macaw Bot", "Hide sender", "telegram bot"],
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot token from @Botfather",
